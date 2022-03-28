@@ -1,4 +1,3 @@
-from unicodedata import category
 from django.urls import path, include
 from rest_framework.authtoken import views
 from .views import home
@@ -9,4 +8,5 @@ urlpatterns = [
     path('product/', include('api.product.urls')),
     path('user/', include('api.user.urls')),
     path('order/', include('api.order.urls')),
+    path('payment/', include('api.payment.urls')),
 ]
